@@ -116,6 +116,13 @@ _Screenshot of the Build Phase can be found [here](Documentation/Images/RunBuild
     )
     ```
 3. Build your project, now the `R` struct should be available in your code, use auto-complete to explore all static references
+    ```swift
+    // SPM project itself
+    let string = R.string.localizable.welcomeWithName("Arthur Dent")
+
+    // Hosting project
+    let string = Example.R.string.localizable.welcomeWithName("Arthur Dent")
+    ```
 
 <details>
 <summary><h3>CocoaPods</h3></summary>
